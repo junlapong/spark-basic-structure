@@ -30,6 +30,8 @@ public class Application {
         before("*",                  Filters.addTrailingSlashes);
         before("*",                  Filters.handleLocaleChange);
 
+        redirect.get("/", Path.Web.INDEX);
+
         // Set up routes
         get(Path.Web.INDEX,          IndexController.serveIndexPage);
         get(Path.Web.BOOKS,          BookController.fetchAllBooks);
