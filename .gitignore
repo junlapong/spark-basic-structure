@@ -112,7 +112,7 @@ crashlytics-build.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 target
-
+bin
 
 # Created by https://www.gitignore.io/api/gradle
 
@@ -131,3 +131,8 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+
+.classpath
+.project
+.settings/
